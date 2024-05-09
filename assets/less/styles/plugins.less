@@ -1,0 +1,71 @@
+@import (reference) "main.less";
+
+/*----------------------------------------------------------------------*/
+/*------------------------------8 PLUGINS-------------------------------*/
+/*----------------------------------------------------------------------*/
+/*--------------------8.1 SLICK--------------------*/
+.slick-slider{position:relative; display:block; box-sizing:border-box; -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none; -webkit-touch-callout:none; -khtml-user-select:none; -ms-touch-action:pan-y; touch-action:pan-y; -webkit-tap-highlight-color:transparent;}
+.slick-list{position:relative; display:block; overflow:hidden; margin:0; padding:0;}
+.slick-list:focus{outline:none;}
+.slick-list.dragging{cursor:pointer;}
+.slick-slider .slick-track,.slick-slider .slick-list{-webkit-transform:none; -moz-transform:none; -ms-transform:none; -o-transform:none; transform:none;}
+.slick-track{position:relative; top:0; left:0; display:block;}
+.slick-track:before,.slick-track:after{display:table; content:'';}
+.slick-track:after{clear:both;}
+.slick-loading .slick-track{visibility:hidden;}
+.slick-slide{display:none; float:left; height:100%; min-height:1px; border:none !important;}
+[dir='rtl'] .slick-slide{float:right;}
+.slick-slide.dragging img{pointer-events:none;}
+.slick-initialized .slick-slide{display:block;}
+.slick-loading .slick-slide{visibility:hidden;}
+.slick-vertical .slick-slide{display:block; height:auto; border:1px solid transparent;}
+.slick-arrow.slick-hidden{display:none;}
+.slick-prev, .slick-next{position:relative;}
+
+.arrows-1 .slick-prev, .arrows-1 .slick-next{width:41px; height:50px; position:absolute; top:0; left:0; z-index:2; opacity:0.5; .transition(0.3s);}
+.arrows-1 .slick-prev:before, .arrows-1 .slick-next:before{content:""; width:41px; height:16px; position:absolute; top:50%; left:0; background:url(../img/svg/slider-arrow.svg) no-repeat; background-size:100% 100%;}
+.desktop .arrows-1 .slick-prev:hover, .desktop .arrows-1 .slick-next:hover{opacity:1;}
+.arrows-1 .slick-next{left:auto; right:0; .scale(-1,1);}
+
+.arrows-2{width:142px; overflow:hidden;}
+.arrows-2 .slick-prev, .arrows-2 .slick-next{width:41px; height:50px; display:block; float:left; position:relative; z-index:2;}
+.arrows-2 .slick-prev:before, .arrows-2 .slick-next:before, .arrows-2 .slick-prev:after, .arrows-2 .slick-next:after{content:""; width:41px; height:16px; position:absolute; top:50%; left:0; .transition(0.3s);}
+.arrows-2 .slick-prev:before, .arrows-2 .slick-next:before{background:url(../img/svg/slider-arrow-grey.svg) no-repeat; background-size:100% 100%;}
+.arrows-2 .slick-prev:after, .arrows-2 .slick-next:after{background:url(../img/svg/slider-arrow-orange.svg) no-repeat; background-size:100% 100%; opacity:0; z-index:1;}
+.desktop .arrows-2 .slick-prev:hover:after, .desktop .arrows-2 .slick-next:hover:after{opacity:1;}
+.arrows-2 .slick-next{float:right; .scale(-1,1);}
+
+/*--------------------8.2 UI DATEPICKER--------------------*/
+#ui-datepicker-div{width:280% !important; padding:0 0 12px !important; z-index:90 !important; background:#fff; box-shadow:0px 30px 20px rgba(47, 21, 135, 0.15); border-radius:20px; display:none; overflow:visible; color:@black;}
+#ui-datepicker-div table{width:100%; margin:0;}
+
+/* head */
+.ui-datepicker-header{margin:0 0 52px; padding:0 0 11px; display:block; position:relative; font:600 28px/110% @font-2; color:@black;}
+.ui-datepicker-header:after{content:""; width:100%; height:2px; position:absolute; bottom:0; left:0; background:url(../img/dashed.png) repeat-x;}
+
+/* table */
+.ui-datepicker-calendar{width:100%;}
+.ui-datepicker-calendar thead th{padding-bottom:9px; font:16px/27px @font-1; color:@grey; text-align:center;}
+.ui-datepicker-calendar td{border:1px solid #fff; vertical-align:top; text-align:center; overflow:hidden;}
+.ui-datepicker-calendar td a, .ui-datepicker-calendar td span{height:36px; display:block; background:#e6ebfc; color:@grey; font:14px/36px @font-1;}
+.ui-datepicker-calendar td.ui-datepicker-current-day a{background:@orange; color:#fff !important;}
+.ui-state-disabled span, .ui-state-disabled a{cursor:default;}
+.ui-datepicker-unselectable span, .ui-datepicker-unselectable a{opacity:0.3; background:none !important;}
+.desktop .ui-datepicker-calendar td a:hover{color:@orange; text-decoration:none;}
+
+.ui-datepicker-calendar td.radius-top-left a, .ui-datepicker-calendar tr:first-child td[data-handler] a{border-top-left-radius:5px;}
+.ui-datepicker-calendar tr:first-child td[data-handler]+td[data-handler] a{border-top-left-radius:0;}
+.ui-datepicker-calendar td.radius-top-right span, .ui-datepicker-calendar td.radius-top-right a, .ui-datepicker-calendar  tr:first-child td:last-child a{border-top-right-radius:5px;}
+.ui-datepicker-calendar td.radius-bottom-left span, .ui-datepicker-calendar td.radius-bottom-left a, .ui-datepicker-calendar  tr:last-child td:first-child a{border-bottom-left-radius:5px;}
+.ui-datepicker-calendar td.radius-bottom-right span, .ui-datepicker-calendar td.radius-bottom-right a,  .ui-datepicker-calendar tr:last-child td:last-child a{border-bottom-right-radius:5px;}
+
+/* arrows */
+.ui-datepicker-prev, .ui-datepicker-next{width:41px; height:40px; display:block; position:absolute; top:50px; left:0; z-index:2; cursor:pointer;}
+.ui-datepicker-prev:before, .ui-datepicker-next:before, .ui-datepicker-prev:after, .ui-datepicker-next:after{content:""; width:31px; height:12px; margin:-6px 0 0; position:absolute; top:50%; left:0; .transition(0.3s);}
+.ui-datepicker-prev:before, .ui-datepicker-next:before{background:url(../img/svg/slider-arrow-grey.svg) no-repeat; background-size:100% 100%;}
+.ui-datepicker-prev:after, .ui-datepicker-next:after{background:url(../img/svg/slider-arrow-orange.svg) no-repeat; background-size:100% 100%; opacity:0; z-index:1;}
+.desktop .ui-datepicker-prev:hover:after, .desktop .ui-datepicker-next:hover:after{opacity:1;}
+.ui-datepicker-next{left:auto; right:0; .scale(-1,1);}
+
+.ui-datepicker-next.ui-state-disabled, .ui-datepicker-prev.ui-state-disabled{opacity:0.3; cursor:default;}
+.ui-datepicker-next.ui-state-disabled:after, .ui-datepicker-prev.ui-state-disabled:after{opacity:0 !important;}
