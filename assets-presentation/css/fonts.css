@@ -1,0 +1,11 @@
+@font-face { font-family: 'Roboto'; src: url("../fonts/Roboto-Regular.eot"); src: url("../fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.ttf") format("truetype"); font-weight: 400; font-style: normal; font-stretch: normal; font-display: swap; }
+
+@font-face { font-family: 'Roboto'; src: url("../fonts/Roboto-Medium.eot"); src: url("../fonts/Roboto-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Medium.woff") format("woff"), url("../fonts/Roboto-Medium.ttf") format("truetype"); font-weight: 500; font-style: normal; font-stretch: normal; font-display: swap; }
+
+@font-face { font-family: 'DarkerGrotesque'; src: url("../fonts/DarkerGrotesque-Medium.eot"); src: url("../fonts/DarkerGrotesque-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/DarkerGrotesque-Medium.woff") format("woff"), url("../fonts/DarkerGrotesque-Medium.ttf") format("truetype"); font-weight: 500; font-style: normal; font-stretch: normal; font-display: swap; }
+
+@font-face { font-family: 'DarkerGrotesque'; src: url("../fonts/DarkerGrotesque-SemiBold.eot"); src: url("../fonts/DarkerGrotesque-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/DarkerGrotesque-SemiBold.woff") format("woff"), url("../fonts/DarkerGrotesque-SemiBold.ttf") format("truetype"); font-weight: 600; font-style: normal; font-stretch: normal; font-display: swap; }
+
+@font-face { font-family: 'Codystar'; src: url("../fonts/Codystar.eot"); src: url("../fonts/Codystar.eot?#iefix") format("embedded-opentype"), url("../fonts/Codystar.woff") format("woff"), url("../fonts/Codystar.ttf") format("truetype"); font-weight: 400; font-style: normal; font-stretch: normal; font-display: swap; }
+
+@font-face { font-family: 'Codystar'; src: url("../fonts/Codystar-Light.eot"); src: url("../fonts/Codystar-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Codystar-Light.woff") format("woff"), url("../fonts/Codystar-Light.ttf") format("truetype"); font-weight: 300; font-style: normal; font-stretch: normal; font-display: swap; }
